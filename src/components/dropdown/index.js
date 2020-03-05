@@ -18,7 +18,7 @@ import { TextField } from 'react-native-material-textfield';
 import DropdownItem from '../item';
 import styles from './styles';
 
-import { moderateScale } from '../../responsive';
+import { moderateScale } from './responsive';
 
 export default class Dropdown extends PureComponent {
   static defaultProps = {
