@@ -18,6 +18,8 @@ import { TextField } from 'react-native-material-textfield';
 import DropdownItem from '../item';
 import styles from './styles';
 
+import { moderateScale } from '../../responsive';
+
 export default class Dropdown extends PureComponent {
   static defaultProps = {
     hitSlop: { top: 6, right: 4, bottom: 6, left: 4 },
@@ -505,7 +507,7 @@ export default class Dropdown extends PureComponent {
 
     return (
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
-        <Text style={{flex: 1}}>{title}</Text>
+        <Text style={{flex: 1, fontSize: moderateScale(14)}}>{title}</Text>
         {renderAccessory()}
       </View>
     );
